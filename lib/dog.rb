@@ -91,4 +91,9 @@ class Dog
     end
     dog
   end
+
+  def update
+    self.find_by_id(self.id)
+  end
+
 end
