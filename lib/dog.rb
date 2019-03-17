@@ -93,7 +93,7 @@ class Dog
   end
 
   def update
-    self.find_by_id(self.id)
+    Dog.find_by_id(self.id)
 
     sql = <<-SQL
       UPDATE dogs
