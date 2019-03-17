@@ -95,7 +95,7 @@ class Dog
   def update
     self.find_by_id(self.id)
 
-    sql = <<-SQL 
+    sql = <<-SQL
       UPDATE dogs
       SET name = ? AND breed = ?
       WHERE id = ?
